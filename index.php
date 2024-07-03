@@ -18,7 +18,7 @@ $dogFood1 = new Food('Royal Canin Mini Adult', 43.99, $food, $dog, 545, 'Prosciu
 $dogFood2 = new Food('Almo Nature Holistic Maintenance Medium Large Tonno e Riso', 44.99, $food, $dog, 600, 'Manzo, cereali', 'https://arcaplanet.vtexassets.com/arquivos/ids/300514/Almo-Nature-Holistic-Maintenance-Medium-Large-Tonno-e-Riso-10118806.jpg');
 
 
-var_dump($dogFood1);
+var_dump($dogFood1, $dogFood2);
 
 ?>
 

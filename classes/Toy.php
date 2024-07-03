@@ -3,10 +3,22 @@ require_once __DIR__ . '/products.php';
 
 class Toy extends Products {
     private $characteristics;
+    private $urlImg;
 
-    public function __construct($name, $price, $category, $ingredients, $typePet, $characteristics) {
+    /**
+     * Construct for product toy
+     *
+     * @param [type] $name
+     * @param [type] $price
+     * @param [type] $category
+     * @param [type] $ingredients
+     * @param [type] $typePet
+     * @param [type] $characteristics
+     */
+    public function __construct($name, $price, $category, $ingredients, $typePet, $characteristics, $urlImg) {
         parent::__construct($name, $price, $category, $ingredients, $typePet);
         $this->characteristics = $characteristics;
+        $this->urlImg = $urlImg;
     }
 
     /**
@@ -19,6 +31,15 @@ class Toy extends Products {
     }
 
     /**
+     * return urlImg
+     *
+     * @return void
+     */
+    public function getUrlImg(){
+        return $this->urlImg;
+    }
+
+    /**
      * set characteristics
      *
      * @param $characteristics
@@ -26,5 +47,14 @@ class Toy extends Products {
      */
     public function setcharacteristics($characteristics) {
         $this->characteristics = $characteristics;
+    }
+
+    /**
+     * set urlImg
+     *
+     * @return void
+     */
+    public function setUrlImg(){
+        $this->urlImg = $urlImg;
     }
 }
