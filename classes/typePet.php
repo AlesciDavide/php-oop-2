@@ -1,10 +1,10 @@
 <?php
 
 
-class typePet{
-    const cane = 'Cane';
-    const gatto = 'gatto';
-    const uccelli = 'Uccelli';
-    const pesci = 'Pesci';
-    
+class TypePet{
+    const dog = 'Dog';
+    const cat = 'Cat';
+    const bird = 'Bird';
+    const fish = 'Fish';
+
 }
