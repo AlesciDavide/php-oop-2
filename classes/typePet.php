@@ -2,23 +2,23 @@
 
 
 class TypePet{
-    private $typePet;
+    private $namePet;
 
-    public function __construct($typePet){
-    $this->typePet = $typePet;
+    public function __construct($namePet){
+    $this->namePet = $namePet;
     }
 
     /**
-     * return typePet
+     * return namePet
      *
      * @return void
      */
-    public function gettypePet() {
-        return $this->typePet;
+    public function getnamePet() {
+        return $this->namePet;
     }
 
-    public function settypePet($typePet) {
-        $this->typePet = $typePet;
+    public function setnamePet($namePet) {
+        $this->namePet = $namePet;
     }
 
 }

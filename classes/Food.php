@@ -4,11 +4,13 @@ require_once __DIR__ . '/products.php';
 class Food extends Products {
     private $weight;
     private $ingredients;
+    private $urlImg;
 
-    public function __construct($name, $price, $category, $typePet, $weight, $ingredients) {
+    public function __construct($name, $price, $category, $typePet, $weight, $ingredients, $urlImg) {
         parent::__construct($name, $price, $category, $typePet);
         $this->weight = $weight;
         $this->ingredients = $ingredients;
+        $this->urlImg = $urlImg;
     }
 
     /**
@@ -30,6 +32,15 @@ class Food extends Products {
     }
 
     /**
+     * return urlImg
+     *
+     * @return void
+     */
+    public function getUrlImg(){
+        return $this->urlImg;
+    }
+
+    /**
      * set weight
      *
      * @param $weight
@@ -46,5 +57,13 @@ class Food extends Products {
      */
     public function setIngredients(){
         $this->ingredients = $ingredients;
+    }
+    /**
+     * set urlImg
+     *
+     * @return void
+     */
+    public function setUrlImg(){
+        $this->urlImg = $urlImg;
     }
 }
