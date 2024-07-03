@@ -24,7 +24,7 @@ class Food extends Products {
      * @param $weight
      * @return void
      */
-    public function setExpirationDate($weight) {
+    public function setWeight($weight) {
         $this->weight = $weight;
     }
 }
