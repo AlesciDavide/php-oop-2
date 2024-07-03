@@ -2,5 +2,6 @@
 
 
 class Category {
-    
+    const food = 'Food';
+
 }

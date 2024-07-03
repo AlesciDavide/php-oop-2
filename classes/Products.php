@@ -4,14 +4,17 @@ class Products {
     private $name;
     private $price;
     private $category;
+    private $ingredients;
     private $typePet;
 
-    public function __construct($name, $price, $category, $typePet) {
+    public function __construct($name, $price, $category, $ingredients, $typePet) {
         $this->name = $name;
         $this->price = $price;
         $this->category = $category;
+        $this->ingredients = $ingredients;
         $this->typePet = $typePet;
     }
+
     /**
      * return Name of products
      *
@@ -20,6 +23,7 @@ class Products {
     public function getName() {
         return $this->name;
     }
+
     /**
      * return Price of products
      *
@@ -28,6 +32,7 @@ class Products {
     public function getPrice() {
         return $this->price;
     }
+
     /**
      * return Category of products
      *
@@ -36,6 +41,16 @@ class Products {
     public function getCategory() {
         return $this->category;
     }
+
+    /**
+     * return Ingredients of products
+     *
+     * @return void
+     */
+    public function getIngredients(){
+        return $this->ingredients;
+    }
+
     /**
      * return typePet of products
      *
@@ -73,6 +88,16 @@ class Products {
      */
     public function setCategory($category) {
         $this->category = $category;
+    }
+
+    /**
+     * set  ingredients
+     *
+     * @param $ingredients
+     * @return void
+     */
+    public function setIngredients($ingredients){
+        $this->ingredients = $ingredients;
     }
 
     /**
