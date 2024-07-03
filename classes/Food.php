@@ -3,10 +3,12 @@ require_once __DIR__ . '/products.php';
 
 class Food extends Products {
     private $weight;
+    private $ingredients;
 
-    public function __construct($name, $price, $category, $ingredients, $typePet, $weight) {
-        parent::__construct($name, $price, $category, $ingredients, $typePet);
+    public function __construct($name, $price, $category, $typePet, $weight, $ingredients) {
+        parent::__construct($name, $price, $category, $typePet);
         $this->weight = $weight;
+        $this->ingredients = $ingredients;
     }
 
     /**
@@ -19,6 +21,15 @@ class Food extends Products {
     }
 
     /**
+     * return ingredients
+     *
+     * @return void
+     */
+    public function geIngredients(){
+        return $this->ingredients;
+    }
+
+    /**
      * set weight
      *
      * @param $weight
@@ -26,5 +37,14 @@ class Food extends Products {
      */
     public function setWeight($weight) {
         $this->weight = $weight;
+    }
+
+    /**
+     * set Ingredients
+     *
+     * @return void
+     */
+    public function setIngredients(){
+        $this->ingredients = $ingredients;
     }
 }

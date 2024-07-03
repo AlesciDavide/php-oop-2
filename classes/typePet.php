@@ -2,9 +2,23 @@
 
 
 class TypePet{
-    const dog = 'Dog';
-    const cat = 'Cat';
-    const bird = 'Bird';
-    const fish = 'Fish';
+    private $typePet;
+
+    public function __construct($typePet){
+    $this->typePet = $typePet;
+    }
+
+    /**
+     * return typePet
+     *
+     * @return void
+     */
+    public function gettypePet() {
+        return $this->typePet;
+    }
+
+    public function settypePet($typePet) {
+        $this->typePet = $typePet;
+    }
 
 }
