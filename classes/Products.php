@@ -1,31 +1,87 @@
 <?php
 
 class Products {
-    private $food;
+    private $name;
+    private $price;
     private $category;
+    private $typePet;
 
-    public function __construct( Food $food, Category $category){
-        $this->food = $food;
+    public function __construct($name, $price, $category, $typePet) {
+        $this->name = $name;
+        $this->price = $price;
         $this->category = $category;
+        $this->typePet = $typePet;
     }
     /**
-     * return name products, url img and category
+     * return Name of products
      *
      * @return void
      */
-    public function getproducts(){
-        return $this->food;
+    public function getName() {
+        return $this->name;
+    }
+    /**
+     * return Price of products
+     *
+     * @return void
+     */
+    public function getPrice() {
+        return $this->price;
+    }
+    /**
+     * return Category of products
+     *
+     * @return void
+     */
+    public function getCategory() {
         return $this->category;
     }
     /**
-     * set food and category 
+     * return typePet of products
      *
-     * @param string food
-     * @param string namecategory
      * @return void
      */
-    public function setproducts(food $food, Category $category){
-        $this->food = $food;
+    public function gettypePet() {
+        return $this->typePet;
+    }
+    
+    /**
+     * set Name
+     *
+     * @param string $name
+     * @return void
+     */
+    public function setName($name) {
+        $this->name = $name;
+    }
+
+    /**
+     * set Price
+     *
+     * @param $price
+     * @return void
+     */
+    public function setPrice($price) {
+        $this->price = $price;
+    }
+
+    /**
+     * set Category
+     *
+     * @param $category
+     * @return void
+     */
+    public function setCategory($category) {
         $this->category = $category;
+    }
+
+    /**
+     * set typePet
+     *
+     * @param $typePet
+     * @return void
+     */
+    public function setTypePet($typePet) {
+        $this->typePet = $typePet;
     }
 }
