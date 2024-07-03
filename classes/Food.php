@@ -5,7 +5,17 @@ class Food extends Products {
     private $weight;
     private $ingredients;
     private $urlImg;
-
+    /**
+     * Construct for product Food
+     *
+     * @param [type] $name
+     * @param [type] $price
+     * @param [type] $category
+     * @param [type] $typePet
+     * @param [type] $weight
+     * @param [type] $ingredients
+     * @param [type] $urlImg
+     */
     public function __construct($name, $price, $category, $typePet, $weight, $ingredients, $urlImg) {
         parent::__construct($name, $price, $category, $typePet);
         $this->weight = $weight;
