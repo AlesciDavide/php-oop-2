@@ -3,12 +3,14 @@ require_once __DIR__ . '/products.php';
 
 class Accessories extends Products {
     private $materials;
+    private $dimension;
     private $urlImg;
 
-    public function __construct($name, $price, $category, $typePet, $materials, $urlImg) {
-        parent::__construct($name, $price, $category, $typePet);
+    public function __construct($name, $price, $typePet, $materials, $dimension, $urlImg) {
+        parent::__construct($name, $price, $typePet);
         $this->materials = $materials;
         $this->urlImg = $urlImg;
+        $this->dimension = $dimension;
         
     }
 
@@ -30,6 +32,15 @@ class Accessories extends Products {
         return $this->urlImg;
     }
 
+    /**
+     * return dimension
+     *
+     * @return void
+     */
+    public function getDimension(){
+        return $this->dimension;
+    }
+
 
     /**
      * set materials
@@ -48,5 +59,15 @@ class Accessories extends Products {
      */
     public function setUrlImg(){
         $this->urlImg = $urlImg;
+    }
+
+    /**
+     * set dimension
+     *
+     * @return void
+     */
+    public function setDimension(){
+        $this->urlImg = $urlImg;
+        $this->dimension = $dimension;
     }
 }

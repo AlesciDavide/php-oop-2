@@ -3,13 +3,11 @@
 class Products {
     private $name;
     private $price;
-    private $category;
     private $typePet;
 
-    public function __construct($name, $price, $category, $typePet) {
+    public function __construct($name, $price, $typePet) {
         $this->name = $name;
         $this->price = $price;
-        $this->category = $category;
         $this->typePet = $typePet;
     }
 

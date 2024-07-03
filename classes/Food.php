@@ -16,8 +16,8 @@ class Food extends Products {
      * @param [type] $ingredients
      * @param [type] $urlImg
      */
-    public function __construct($name, $price, $category, $typePet, $weight, $ingredients, $urlImg) {
-        parent::__construct($name, $price, $category, $typePet);
+    public function __construct($name, $price, $typePet, $weight, $ingredients, $urlImg) {
+        parent::__construct($name, $price, $typePet);
         $this->weight = $weight;
         $this->ingredients = $ingredients;
         $this->urlImg = $urlImg;
