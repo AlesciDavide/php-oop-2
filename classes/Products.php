@@ -3,7 +3,7 @@
 class Products {
     private $name;
     private $price;
-    private $typePet;
+    public $typePet;
 
     public function __construct($name, $price, $typePet) {
         $this->name = $name;

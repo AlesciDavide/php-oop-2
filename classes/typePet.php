@@ -2,8 +2,8 @@
 
 
 class TypePet{
-    private $namePet;
-    private $iconPet;
+    public $namePet;
+    public $iconPet;
 
     public function __construct($namePet, $iconPet){
     $this->namePet = $namePet;

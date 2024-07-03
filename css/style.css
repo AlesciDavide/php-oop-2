@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+}
+
+.myTitle{
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
+
+p{
+    margin-bottom: .3rem;
+    margin-left: .5rem;
+}
+
+.myImage{
+    height: 200px;
+    align-self: center;
+    margin: .5rem;
+}
+
+.container{
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+}
+
+.card{
+    width: calc((1400px / 4) - 0.6rem);
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    
+    border: 2px solid black;
+    flex-direction: column;
+}
+
