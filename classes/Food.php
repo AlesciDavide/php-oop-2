@@ -23,9 +23,6 @@ class Food extends Products {
         $this->urlImg = $urlImg;
     }
 
-    public function getTypePet(){
-        return $this->typePet;
-    }
     /**
      * return weight
      *
@@ -40,7 +37,7 @@ class Food extends Products {
      *
      * @return void
      */
-    public function geIngredients(){
+    public function getIngredients(){
         return $this->ingredients;
     }
 

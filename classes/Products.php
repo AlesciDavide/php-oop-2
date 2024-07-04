@@ -3,7 +3,7 @@
 class Products {
     private $name;
     private $price;
-    public $typePet;
+    private $typePet;
 
     public function __construct($name, $price, $typePet) {
         $this->name = $name;
@@ -28,16 +28,6 @@ class Products {
     public function getPrice() {
         return $this->price;
     }
-
-    /**
-     * return Category of products
-     *
-     * @return void
-     */
-    public function getCategory() {
-        return $this->category;
-    }
-
 
     /**
      * return typePet of products
@@ -66,16 +56,6 @@ class Products {
      */
     public function setPrice($price) {
         $this->price = $price;
-    }
-
-    /**
-     * set Category
-     *
-     * @param $category
-     * @return void
-     */
-    public function setCategory($category) {
-        $this->category = $category;
     }
 
     /**

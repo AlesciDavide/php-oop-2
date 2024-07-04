@@ -30,7 +30,7 @@ require_once __DIR__ . '/db/db.php';
                     <p><?php echo $product->getTypePet()->getnamePet() ?>  <?php echo $product->getTypePet()->getIconPet() ?></p>
                     <p>Prezzo: €<?php echo $product->getPrice() ?></p>
                     <p>Peso netto: <?php echo $product->getWeight() ?>g</p>
-                    <p>Ingredienti: <?php echo $product->geIngredients() ?></p>
+                    <p>Ingredienti: <?php echo $product->getIngredients() ?></p>
                 </article>
                 <?php }elseif($product instanceof Accessories){  ?>
                     <article class="card">
